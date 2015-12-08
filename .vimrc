@@ -139,7 +139,7 @@ nnoremap <C-u>b :Unite buffer<CR>
 nnoremap <C-u>r :Unite file_mru<CR>
 nnoremap <C-u>p :UniteWithBufferDir -buffer-name=files file<CR>
 
-" Simplenote
+"" Simplenote
 "let g:SimplenoteUsername = ""
 "let g:SimplenotePassword = ""
 
