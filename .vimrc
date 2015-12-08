@@ -140,8 +140,8 @@ nnoremap <C-u>r :Unite file_mru<CR>
 nnoremap <C-u>p :UniteWithBufferDir -buffer-name=files file<CR>
 
 " Simplenote
-let g:SimplenoteUsername = ""
-let g:SimplenotePassword = ""
+"let g:SimplenoteUsername = ""
+"let g:SimplenotePassword = ""
 
 " use tab
 nnoremap tc :tabnew<CR>

@@ -113,7 +113,7 @@ SPROMPT=$tmp_sprompt  # スペル訂正用プロンプト
 
 ### Title (user@hostname) ###
 case "${TERM}" in
-kterm*|xterm*|)
+kterm*|xterm*)
   precmd() {
     echo -ne "\033]0;${USER}@${HOST%%.*}\007"
   }
@@ -136,7 +136,7 @@ alias p='peco'
 function peco-pkill() {
   for pid in `ps aux | peco | awk '{ print $2 }'`
   do
-    kill -kill $pid
+    kill -KILL $pid
     echo "Killed ${pid}"
   done
 }
