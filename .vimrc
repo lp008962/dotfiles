@@ -17,7 +17,7 @@ call vundle#begin()
     Plugin 'Shougo/neosnippet'
     Plugin 'Shougo/neosnippet-snippets'
     Plugin 'scrooloose/nerdtree'
-    Plugin 'mrtazz/simplenote.vim'
+    "Plugin 'mrtazz/simplenote.vim'
     Plugin 'vim-scripts/YankRing.vim'
     Plugin 'thinca/vim-quickrun'
     "Plugin ''
