@@ -149,3 +149,4 @@ nnoremap tc :tabnew<CR>
 nnoremap tn :tabnew 
 nnoremap tx :tabclose<CR>
 
+vmap <Enter> <Plug>(EasyAlign)
