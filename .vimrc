@@ -20,6 +20,7 @@ call vundle#begin()
     "Plugin 'mrtazz/simplenote.vim'
     Plugin 'vim-scripts/YankRing.vim'
     Plugin 'thinca/vim-quickrun'
+    Plugin 'junegunn/vim-easy-align'
     "Plugin ''
     " All of your Plugins must be added before the following line
     call vundle#end()            " required
