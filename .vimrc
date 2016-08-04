@@ -137,11 +137,13 @@ endif
 "let g:neosnippet#snippets_directory='~/.vim/snippets'
 
 " unite.vim
+let g:unite_source_history_yank_enable=1
 nnoremap <C-u>f :Unite file<CR>
-nnoremap <C-t>f :Unite tab<CR>
+nnoremap <C-u>t :Unite tab<CR>
 nnoremap <C-u>b :Unite buffer<CR>
-nnoremap <C-u>r :Unite file_mru<CR>
+nnoremap <C-u>l :Unite file_mru<CR>
 nnoremap <C-u>p :UniteWithBufferDir -buffer-name=files file<CR>
+nnoremap <C-u>y :Unite history/yank<CR>
 
 "" Simplenote
 "let g:SimplenoteUsername = ""
