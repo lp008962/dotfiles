@@ -18,8 +18,10 @@ call vundle#begin()
     Plugin 'Shougo/neosnippet-snippets'
     Plugin 'scrooloose/nerdtree'
     "Plugin 'mrtazz/simplenote.vim'
+    Plugin 'mattn/emmet-vim'
     Plugin 'vim-scripts/YankRing.vim'
-    Plugin 'thinca/vim-quickrun'
+    "Plugin 'thinca/vim-quickrun'
+    Plugin 'vim-scripts/quickrun.vim'
     Plugin 'junegunn/vim-easy-align'
     "Plugin ''
     " All of your Plugins must be added before the following line
@@ -149,4 +151,11 @@ nnoremap tc :tabnew<CR>
 nnoremap tn :tabnew 
 nnoremap tx :tabclose<CR>
 
+" Alignment
 vmap <Enter> <Plug>(EasyAlign)
+
+let g:easy_align_delimiters = {
+\ '>': { 'pattern': '>>\|=>\|>' }
+\ }
+
+set viminfo='50,\"1000,:10,s10,h
