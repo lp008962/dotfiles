@@ -20,6 +20,7 @@ call vundle#begin()
     "Plugin 'mrtazz/simplenote.vim'
     Plugin 'mattn/emmet-vim'
     Plugin 'vim-scripts/YankRing.vim'
+    Plugin 'vim-scripts/yanktmp.vim'
     "Plugin 'thinca/vim-quickrun'
     Plugin 'vim-scripts/quickrun.vim'
     Plugin 'junegunn/vim-easy-align'
@@ -145,6 +146,12 @@ nnoremap <C-u>p :UniteWithBufferDir -buffer-name=files file<CR>
 "" Simplenote
 "let g:SimplenoteUsername = ""
 "let g:SimplenotePassword = ""
+
+" yanktmp
+map sy :call YanktmpYank()<CR>
+map <silent> sp :call YanktmpPaste_p()<CR>
+map <silent> sP :call YanktmpPaste_P()<CR>
+
 
 " use tab
 nnoremap tc :tabnew<CR>
