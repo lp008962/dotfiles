@@ -1,6 +1,6 @@
 if [ $SHLVL = 1 ]; then
     #screen -xR
-    tmux
+    if tmux has-session; then tmux attach; else tmux; fi
 fi
 
 export PERL_CPANM_OPT="--local-lib=~/extlib"
@@ -128,7 +128,6 @@ esac
 
 
 ### Aliases ###
-alias r=rails
 alias v=vim
 alias sudo='sudo '
 alias p='peco'
