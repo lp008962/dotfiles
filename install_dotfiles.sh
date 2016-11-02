@@ -11,4 +11,6 @@ for f in ${dotfiles[@]}; do
   ln -s $path/$f $HOME/$f
 done
 
+git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/Vundle.vim
+
 
