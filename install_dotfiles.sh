@@ -30,7 +30,7 @@ PECO='peco_linux_amd64'
 
 cd /tmp
 wget ${URL}${VER}/${PECO}.tar.gz
-tar -zxf $PECO
+tar -zxf $PECO.tar.gz
 
 if [ -e $HOME/bin ]; then
     cp $PECO/peco $HOME/bin/
