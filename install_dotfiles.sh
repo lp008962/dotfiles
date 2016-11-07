@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo yum install -y git tmux zsh
+sudo yum install -y git tmux zsh source-highlight
 chsh
 
 path=$HOME/dotfiles
