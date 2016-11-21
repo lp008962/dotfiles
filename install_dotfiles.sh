@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo yum install -y git tmux zsh source-highlight
+sudo yum install -y wget curl git tmux zsh source-highlight perl cpanm
 chsh
 
 path=$HOME/dotfiles
