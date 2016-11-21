@@ -8,14 +8,7 @@ use LWP::UserAgent;
 ##latest=`curl -sI https://github.com/peco/peco/releases/latest | awk -F'/' '/^Location:/{print $NF}'`
 ##wget - https://github.com/peco/peco/releases/download/$latest/peco_linux_amd64.tar.gz
 
-
 my $uri = LWP::UserAgent->new->head('https://github.com/peco/peco/releases/latest')->request->uri;
-
-## use regexp
-#$uri =~ m|http.+/(.+?$)|;
-#my $version = $1;
-
-# use split
 my @version = split '/', $uri;
 
 print $version[-1];
