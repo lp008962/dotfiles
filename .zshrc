@@ -1,7 +1,7 @@
-if [ $SHLVL = 1 ]; then
+#if [ $SHLVL = 1 ]; then
     #screen -xR
     if tmux has-session; then tmux attach; else tmux; fi
-fi
+#fi
 
 export PERL_CPANM_OPT="--local-lib=~/extlib"
 export PERL5LIB="$HOME/extlib/lib/perl5:$HOME/extlib/lib/perl5/x86_64-linux-thread-multi:$PERL5LIB"
